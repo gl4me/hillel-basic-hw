@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*:before
+*:after {
+	box-sizing: border-box;
+}
+
+.container {
+    max-width: 1523px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.justify-space-btwn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.header {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #242b30;
+    border-bottom: 2px #0e1113 solid;
+    box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.100);
+    &-navbar-logo {
+        margin: 49px 0 57px; 
+    }
+}
+
+.header-menu {
+    list-style: none;
+    &-item {
+        padding: 10px 0px;
+        border: 8px solid transparent;
+        &:not(:first-of-type) {
+            margin-left: 20px;
+        }
+        &:hover {
+            background: linear-gradient(0deg, rgb(146,146,146) 1%, rgb(188,189,189) 30%, rgb(206,206,206) 49%, rgb(223,223,223) 50%, rgb(223,223,223) 100%);
+            border-radius: 16px;
+            border: 8px #14191c solid;
+            box-shadow: 0 2px 2px 0 rgba(94, 94, 94, 0.205);
+        }
+        &-link {
+            font-family: "Verdana";
+            font-weight: normal;
+            font-size: 22px;
+            color: #b6aeff;
+            text-decoration: none;
+            padding: 15px 10px;
+            &:hover {
+                text-shadow: 0 2px 0 rgba(255, 255, 255, 0.75);
+                color: #242b30;
+            }
+        }
+    }
+}
+
+.min-height {
+    min-height: 100vh;
+    margin-top: 162px;
+    background-color: #242b30;
+}
+
+.footer {
+    background-color: #171c20;
+    border-top: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(180deg, rgb(44,55,62) 1%, rgb(50,60,66) 30%, rgb(79,89,96) 49%, rgb(79,89,96) 50%, rgb(79,89,96) 100%);
+    box-shadow:0 0 0 1px #111417;
+    &-content {
+        padding: 36px 0px;
+        &-txt {
+            font-family: "Verdana";
+            font-weight: normal;
+            font-size: 19px;
+            color: #dfdfdf;
+            &-designer {
+                text-decoration: none;
+                color: #b6aeff;
+            }
+        }
+    }
+}
+    
+.footer-menu {
+    list-style: none;
+    &-item {
+        &:not(:first-of-type) {
+            margin-left: 40px;
+        }
+        &-link {
+            font-family: "Verdana";
+            font-weight: normal;
+            font-size: 19px;
+            color: #b6aeff;
+            text-decoration: none;
+        } 
+    }
+}
+
